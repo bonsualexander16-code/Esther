@@ -61,10 +61,6 @@
                     margin : 10px ;
                     border-radius :10px ;
                 }
-
-            img , video{
-                display:block ;
-            }
         
         a:hover {
             text-decoration: underline;
@@ -73,7 +69,6 @@
             #sec {
                 width: 100% ;
                 display : flex ;
-                flex-wrap: wrap ;
                 justify-content:space-around;
             }
 
@@ -84,8 +79,8 @@
             }
 
             .vids video {
-                width: 70%;
-                height :17vh;
+                width: 100%;
+                height :30vh;
                 margin:10px ;
                 border-radius : 15px ;
                 
@@ -97,13 +92,11 @@
 
 
             @keyframes float {
-                0%{
+                50%{
                     transform : translate(3px) ;
-                    color : #2fe;
-                }100%{
-                    transform : translate(-3px);
-
-                }
+                    color : #4e3ab;
+                    text-shadow:1px 2px 5px black ;
+            }
             }
                 
         </style>
@@ -143,9 +136,10 @@
                     
                     <section id="sec">
                         <img src="U.jpg" alt="Ohemaa Esther"/>
-                        <img src="picture-of-esther.jpg" alt="picture of esther ohemaa" />
-                        
+                        <img src="picture-of-esther.jpg" alt="picture of esther ohemaa" />                
                     </section> 
+                  
+        
                     <section class="vids">
                         <video src="Estelle.MOV" controls autoplay></video>
                         <video controls src="VID-20260409-WA0000.mp4" autoplay></video>
