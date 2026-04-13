@@ -141,8 +141,8 @@
                   
         
                     <section class="vids">
-                        <video src="Estelle.MOV" controls autoplay></video>
-                        <video controls src="VID-20260409-WA0000.mp4" autoplay></video>
+                        <vide id="vid" src="Estelle.MOV" muted autoplay></video>
+                        <video id="vid2" muted src="VID-20260409-WA0000.mp4" autoplay></video>
                     </section>
                     <p>
                         And in colaboration with <a href="https://github.com/bonsualexander16-code" target="_self">Bonsu Alexander</a>
@@ -155,5 +155,19 @@
 </p>
             
         </footer>
+        <script>
+            let video1 = document.getElementById("vid");
+            let video2 = document.getElementById("vid2");
+           
+            video1.addEventListener("click"  , ()=>{
+                video.play();
+                video.requestFullscreen();
+            })
+
+            video2.addEventListener("click"  , ()=>{
+                video.play();
+                video.requestFullscreen();
+            })
+        </script>
     </body>
 </html>
