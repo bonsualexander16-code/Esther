@@ -35,7 +35,12 @@
                 padding: 10px;
                 background: white;
                 color:#333;
-                line-height:2;
+                line-height:1;
+                scroll-behavior:smooth;
+            }
+
+            html {
+                scroll-behavior : smooth ;
             }
             
             header, section, footer {
@@ -159,10 +164,12 @@
         <script>
             let video1 = document.getElementById("vid");
             let video2 = document.getElementById("vid2");
-           
+           setTimeout(()=>{
+               alert("Tap on videos to get full screen") ;
+           }, 10000)
             video1.addEventListener("click"  , ()=>{
                if(video1.requestFullscreen){
-                video1.play();
+                video1.muted = fales ;
                 video1.requestFullscreen();
                }
             }) ;
@@ -170,6 +177,7 @@
             video2.addEventListener("click"  , ()=>{
             if(video2.requestFullscreen){
                 video2.play();
+                video2.muted = false ;
                 video2.requestFullscreen();
             }
             }) ;
