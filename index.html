@@ -71,14 +71,42 @@
         }
 
             #sec {
+                width: 100% ;
                 display : flex ;
                 justify-content:space-around;
             }
+
+            .vids {
+                width:100%;
+                padding : 10px ;
+                
+            }
+
+            .vids video {
+                width: 100%;
+                border-radius : 10px ;
+            }
+
+            .head{
+                aninmation :float linear 2s infinite ;
+            }
+
+
+            @keyframes float {
+                0%{
+                    transform : translate(3px) ;
+                    color : #2fe;
+                }100%{
+                    transform : translate(-3px);
+
+                }
+            }
+                
         </style>
     </head>
     <body>
         <header>
-            <h1>Esther Ohemaa</h1>
+            <h1 class="head">Esther Ohemaa</h1>
             <p>Ghanaian Scientist</p>
         </header>
          
@@ -91,7 +119,7 @@
                  <ul>
                      <li>Organic Chemistry</li>
                      <li>Physics</li>
-                     <li>Further Mathematiics</li>
+                     <li>Further Mathematics</li>
                      <li>Biology</li>
                      <li>Computer Science</li>
                  </ul>
@@ -112,10 +140,12 @@
                     <section id="sec">
                         <img src="U.jpg" alt="Ohemaa Esther"/>
                         <img src="picture-of-esther.jpg" alt="picture of esther ohemaa" />
+                        
+                    </section> 
+                    <section class="vids">
                         <video src="Estelle.MOV" controls autoplay></video>
                         <video controls src="VID-20260409-WA0000.mp4" autoplay></video>
-                    </section> 
-                    
+                    </section>
                     <p>
                         And in colaboration with <a href="https://github.com/bonsualexander16-code" target="_self">Bonsu Alexander</a>
                     </p>
