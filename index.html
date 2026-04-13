@@ -75,7 +75,8 @@
             .vids {
                 width:100%;
                 padding : 10px ;
-                
+                display : flex ;
+                justify-content :space-around ;
             }
 
             .vids video {
@@ -160,14 +161,18 @@
             let video2 = document.getElementById("vid2");
            
             video1.addEventListener("click"  , ()=>{
+               if(video1.requestFullscreen){
                 video.play();
                 video.requestFullscreen();
-            })
+               }
+            }) ;
 
             video2.addEventListener("click"  , ()=>{
+            if(video2.requestFullscreen){
                 video.play();
                 video.requestFullscreen();
-            })
+            }
+            }) ;
         </script>
     </body>
 </html>
