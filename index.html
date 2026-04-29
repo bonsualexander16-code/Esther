@@ -31,7 +31,7 @@
         <style>
             body{
                 margin:auto;
-                font-family: , sans-serif;
+                font-family:Arial , sans-serif;
                 max-width: 800px;
                 padding: 10px;
                 background: white;
@@ -53,7 +53,7 @@
         
         h1 , h2 ,h3 {
             color:blue;
-            font-family:'Tangerine',Serif ;
+            font-family:Arial,Serif ;
             font-weight : bold;
         }
         
@@ -77,11 +77,16 @@
             #sec {
                 width: 100% ;
                 display : flex ;
-                justify-content:space-around;
+                gap : 10px ;
             }
 
             #sec img {
                 flex-grow : 1 ;
+                transition:1s ease all ;
+            }
+
+            #sec img:hover{
+                flex-grow:6;
             }
 
             .vids {
